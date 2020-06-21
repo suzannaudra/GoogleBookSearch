@@ -1,0 +1,29 @@
+.list {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 157px;
+  grid-gap: 25px;
+}
+
+.card-container {
+  flex-basis: 50%;
+}
+
+.card-container > img {
+  min-height:160px;
+  max-height:160px;
+}
+
+@media only screen and (max-width: 800px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content:center;
+  }
+}
